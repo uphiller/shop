@@ -1,0 +1,8 @@
+# Prefer: ./deploy.sh (builds image, imports to k3s, applies manifests)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: shop
+resources:
+  - ../namespace.yaml
+  - admin-next.yaml
+  - ingress.yaml

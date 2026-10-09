@@ -1,0 +1,15 @@
+k8s/keycloak/supabase.env
+k8s/shop/shop.env
+k8s/admin/admin.env
+
+# dependencies / build
+nextjs/node_modules
+nextjs/.next
+nextjs/out
+admin/node_modules
+admin/.next
+admin/out
+
+# debug
+npm-debug.log*
+.env*.local

@@ -1,0 +1,8 @@
+# Prefer: ./deploy.sh (reads supabase.env, creates Secret, applies manifests)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: shop
+resources:
+  - ../namespace.yaml
+  - keycloak.yaml
+  - ingress.yaml
